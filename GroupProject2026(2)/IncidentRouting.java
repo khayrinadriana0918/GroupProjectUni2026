@@ -54,7 +54,7 @@ public class IncidentRouting {
             for(IncidentInfo incident : analyst.getIncidents()){
                 text.append("-").append(incident.getIncidentId())
                 .append(" (").append(incident.getIncidentType()).append(")\n");
-           text.append("-Impact Cost: ").append(incident.getImpactCost()).append("\n");
+           text.append("-Impact Cost: RM").append(String.format("%.2f",incident.getImpactCost())).append("\n\n");
             }
 
             double totalCost = analyst.getTotalImpactCost();

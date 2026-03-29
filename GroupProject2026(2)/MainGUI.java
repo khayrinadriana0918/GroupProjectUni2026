@@ -20,7 +20,7 @@ public class MainGUI extends JFrame {
     public MainGUI() {
 
         setTitle("SOC Incident Management");
-        setSize(1000, 600);
+        setSize(1000, 700);
         setLayout(new BorderLayout());
 
         // ===== Panels =====
@@ -29,9 +29,9 @@ public class MainGUI extends JFrame {
         criticalPanel = createPanel("Critical Queue");
 
         JPanel centerPanel = new JPanel(new GridLayout(1, 3));
-        centerPanel.add(internalPanel);
-        centerPanel.add(externalPanel);
-        centerPanel.add(criticalPanel);
+        centerPanel.add(new JScrollPane(internalPanel));
+        centerPanel.add(new JScrollPane(externalPanel));
+        centerPanel.add(new JScrollPane(criticalPanel));
 
         add(centerPanel, BorderLayout.CENTER);
 
@@ -39,11 +39,13 @@ public class MainGUI extends JFrame {
         JButton loadBtn = new JButton("Load File");
         JButton showBtn = new JButton("Show Queue");
         JButton nextBtn = new JButton("Next Queue");
+        JButton stackBtn = new JButton("Show Completed");
 
         JPanel btnPanel = new JPanel();
         btnPanel.add(loadBtn);
         btnPanel.add(showBtn);
         btnPanel.add(nextBtn);
+        btnPanel.add(stackBtn);
 
         add(btnPanel, BorderLayout.SOUTH);
 
@@ -58,6 +60,8 @@ public class MainGUI extends JFrame {
         });
 
         nextBtn.addActionListener(e -> processNextBatch());
+        
+        stackBtn.addActionListener(e -> showResolvedStack());
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
@@ -122,14 +126,60 @@ public class MainGUI extends JFrame {
             AnalystInfo analyst = queue.poll();
 
             System.out.println("Processing: " + analyst.getAnalystName());
+            
+            double total = 0;
+        for (IncidentInfo i : analyst.getIncidents()) {
+            total += i.getImpactCost();
+        }
 
+        System.out.println(" Total Impact: RM " + total);
             // push into stack (completed)
             resolvedStack.push(analyst);
 
             count++;
         }
     }
+    //display stack
+    private void showResolvedStack() {
+        
+        if(resolvedStack.isEmpty()){
+            JOptionPane.showMessageDialog(this," No completed analysts yet.");
+            return;
+        }
+        
+        StringBuilder text = new StringBuilder();
+        
+        Stack<AnalystInfo> temp = new Stack<>();
 
+        text.append("\n=== COMPLETED ANALYSTS (STACK) ===\n");
+
+        while (!resolvedStack.isEmpty()) {
+
+            AnalystInfo analyst = resolvedStack.pop();
+            temp.push(analyst);
+
+            text.append(" Name: ").append(analyst.getAnalystName()).append("\n");
+            text.append(" Expertise: ").append(analyst.getExpertiseArea()).append("\n");
+
+            double total = 0;
+
+            for (IncidentInfo i : analyst.getIncidents()) {
+                System.out.println(" - " + i.getIncidentId());
+                total += i.getImpactCost();
+            }
+
+            text.append(" Total Cost: RM ").append(total).append("\n");
+            text.append("--------------------------\n");
+        }
+        //restore stack
+        while(!temp.isEmpty()){
+            resolvedStack.push(temp.pop());
+        }
+        JTextArea area = new JTextArea(text.toString());
+        area.setEditable(false);
+        
+        JOptionPane.showMessageDialog(this, new JScrollPane(area),"Resolved Stack",JOptionPane.INFORMATION_MESSAGE);
+    }
     // ===== Panel helper =====
     private JPanel createPanel(String title) {
         JPanel panel = new JPanel();
@@ -141,31 +191,4 @@ public class MainGUI extends JFrame {
     public static void main(String[] args) {
         new MainGUI();
     }
-
-    /*
-    ===== STACK (COMMENTED AS REQUIRED) =====
-
-    private void showResolved() {
-
-        System.out.println("\n=== COMPLETED ANALYSTS (STACK) ===");
-
-        while (!resolvedStack.isEmpty()) {
-
-            AnalystInfo analyst = resolvedStack.pop();
-
-            System.out.println("Name: " + analyst.getAnalystName());
-            System.out.println("Expertise: " + analyst.getExpertiseArea());
-
-            double total = 0;
-
-            for (IncidentInfo i : analyst.getIncidents()) {
-                System.out.println(" - " + i.getIncidentId());
-                total += i.getImpactCost();
-            }
-
-            System.out.println("Total Cost: RM " + total);
-            System.out.println("--------------------------");
-        }
-    }
-    */
 }

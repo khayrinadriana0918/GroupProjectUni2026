@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=IncidentResolution
+comment1.params=
+comment1.target=IncidentResolution()
+comment2.params=internalQueue\ externalQueue\ criticalQueue
+comment2.target=void\ processIncidents(java.util.Queue,\ java.util.Queue,\ java.util.Queue)
+comment3.params=queue\ queueName\ batchSize
+comment3.target=void\ serveFromQueue(java.util.Queue,\ java.lang.String,\ int)
+comment3.text=\r\n\ Serve\ analysts\ from\ a\ queue\ (FIFO)\r\n
+comment4.params=analyst
+comment4.target=double\ completeIncidents(AnalystInfo)
+comment4.text=\r\n\ Complete\ all\ incidents\ for\ an\ analyst\r\n
+comment5.params=
+comment5.target=void\ displayResolvedStack()
+comment5.text=\r\n\ Display\ resolved\ stack\ (LIFO)\r\n
+comment6.params=
+comment6.target=java.util.Stack\ getResolvedStack()
+numComments=7

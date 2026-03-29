@@ -14,7 +14,7 @@ public class CaseReader
         //store all analysts in LinkedList
         LinkedList<AnalystInfo>analystList = new LinkedList<>();
 
-        try(BufferedReader reader = new BufferedReader(new FileReader("cyber_incidents.txt"))){
+        try(BufferedReader reader = new BufferedReader(new FileReader(filename))){
             String line;
 
             //read line by line
@@ -66,13 +66,14 @@ public class CaseReader
                 analyst.addIncident(incident);
 
             }
+            /*debug print
             System.out.println("All analysts in the list:");
             for (AnalystInfo b : analystList) {
                 System.out.println(b.getAnalystId() + " - " + b.getAnalystName());
                 System.out.println("Expertise Area: "+ b.getExpertiseArea()+"\n");
             }
             System.out.println("Total analysts: " + analystList.size());
-            
+            */
         }catch(FileNotFoundException e){
             System.out.println("could not locate file");
         }
