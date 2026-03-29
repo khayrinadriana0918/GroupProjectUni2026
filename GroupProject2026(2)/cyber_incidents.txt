@@ -1,0 +1,100 @@
+A001|Dean Smith|Network Security|INC001|Port Scanning Attack|2|2009-03-26|3|5000
+A002|Castiel Novak|SIEM Monitoring|INC002|Brute Force Attack|3|2010-09-06|7|25000
+A003|Sam Smith|Digital Forensics|INC003|Insider Threat|4|2009-03-26|5|100000
+A004|Jack Kline|Network Security|INC004|DDoS|4|2017-05-18|5|40000
+A005|Claire Smith Novak|Digital Forensics|INC005|Unauthorized Access|3|2023-04-09|5|30000
+A006|Crowley Macleod|Malware Analysis|INC006|Spyware|3|2020-05-30|6|20000
+A011|Jody Mills|SIEM Monitoring|INC007|Phishing|3|2016-08-14|4|12800
+A003|Sam Smith|Digital Forensics|INC008|Data Breach|5|2012-11-19|42|210000
+A023|Sarah Butane|Malware Analysis|INC009|Trojan Infection|4|2021-02-10|9|55000
+A002|Castiel Novak|SIEM Monitoring|INC010|Brute Force Attack|3|2013-06-21|6|24000
+A008|Bobby Singer|Network Security|INC011|DDoS|4|2017-03-11|10|65000
+A001|Dean Smith|Network Security|INC012|Port Scanning Attack|2|2014-01-09|2|5000
+A017|Nora Bennett|Malware Analysis|INC013|Worm Attack|4|2018-07-22|11|35000
+A010|Kevin Tran|Digital Forensics|INC014|Insider Threat|4|2019-04-15|28|52000
+A007|Eileen Leahy|SIEM Monitoring|INC015|Suspicious Login|2|2020-09-30|1|6000
+A013|Garth Fitzgerald II|Network Security|INC016|Firewall Breach|5|2015-12-01|15|120000
+A005|Claire Smith Novak|Digital Forensics|INC017|Unauthorized Access|3|2022-02-17|6|30000
+A019|Ethan Cole|SIEM Monitoring|INC018|Account Compromise|4|2018-08-12|9|45000
+A016|Alex Romero|Network Security|INC019|Man-in-the-Middle|3|2016-05-20|5|32000
+A012|Donna Hanscum|Digital Forensics|INC020|Data Breach|5|2021-10-05|48|220000
+A009|Charlie Bradbury|Malware Analysis|INC021|Ransomware|5|2017-03-29|26|250000
+A020|Benny Lafitte|Network Security|INC022|DDoS|4|2019-01-18|11|60000
+A004|Jack Kline|Network Security|INC023|Firewall Breach|5|2013-09-27|14|110000
+A018|Maya Chen|Digital Forensics|INC024|Evidence Tampering|5|2023-05-11|36|130000
+A024|Thomas Mayo|SIEM Monitoring|INC025|Phishing|3|2011-04-07|3|10000
+A006|Crowley Macleod|Malware Analysis|INC026|Spyware|3|2021-06-19|5|22000
+A015|Rufus Turner|SIEM Monitoring|INC027|Brute Force Attack|3|2020-03-12|6|27000
+A003|Sam Smith|Digital Forensics|INC028|Unauthorized Access|3|2018-07-01|7|40000
+A011|Jody Mills|SIEM Monitoring|INC029|Suspicious Login|2|2015-02-14|2|5000
+A017|Nora Bennett|Malware Analysis|INC030|Trojan Infection|4|2022-09-22|10|50000
+A008|Bobby Singer|Network Security|INC031|Man-in-the-Middle|3|2014-12-11|5|32000
+A010|Kevin Tran|Digital Forensics|INC032|Data Breach|5|2020-10-21|40|155000
+A014|Rowena MacLeod|Malware Analysis|INC033|Ransomware|5|2022-06-05|25|95000
+A001|Dean Smith|Network Security|INC034|Firewall Breach|5|2016-02-25|12|138000
+A021|Kevin Moskowitz|Malware Analysis|INC035|Worm Attack|4|2021-07-05|10|68000
+A004|Jack Kline|Network Security|INC036|DDoS|4|2018-11-15|9|46000
+A005|Claire Smith Novak|Digital Forensics|INC037|Evidence Tampering|5|2017-08-21|38|125000
+A012|Donna Hanscum|Digital Forensics|INC038|Insider Threat|4|2020-04-15|28|62000
+A020|Benny Lafitte|Network Security|INC039|Port Scanning Attack|2|2020-08-14|2|5000
+A016|Alex Romero|Network Security|INC040|DDoS|4|2015-07-23|10|64000
+A007|Eileen Leahy|SIEM Monitoring|INC041|Phishing|3|2021-06-25|3|13000
+A021|Kevin Moskowitz|Malware Analysis|INC042|Spyware|3|2020-11-14|5|21000
+A002|Castiel Novak|SIEM Monitoring|INC043|Suspicious Login|2|2011-07-18|1|4000
+A015|Rufus Turner|SIEM Monitoring|INC044|Brute Force Attack|3|2022-12-06|6|28000
+A003|Sam Smith|Digital Forensics|INC045|Evidence Tampering|5|2023-08-12|36|123000
+A013|Garth Fitzgerald II|Network Security|INC046|Port Scanning Attack|2|2012-08-21|2|3900
+A014|Rowena MacLeod|Malware Analysis|INC047|Spyware|3|2022-06-01|5|19000
+A011|Jody Mills|SIEM Monitoring|INC048|Account Compromise|4|2015-06-29|10|58000
+A018|Maya Chen|Digital Forensics|INC049|Evidence Tampering|5|2024-03-30|42|120000
+A001|Dean Smith|Network Security|INC050|Man-in-the-Middle|3|2011-05-16|6|15000
+A023|Sarah Butane|Malware Analysis|INC051|Ransomware|5|2022-03-13|30|310000
+A008|Bobby Singer|Network Security|INC052|DDoS|4|2019-04-13|12|66000
+A010|Kevin Tran|Digital Forensics|INC053|Insider Threat|4|2019-07-11|28|52000
+A017|Nora Bennett|Malware Analysis|INC054|Ransomware|5|2023-01-12|25|150000
+A005|Claire Smith Novak|Digital Forensics|INC055|Unauthorized Access|3|2016-03-08|5|32000
+A007|Eileen Leahy|SIEM Monitoring|INC056|Suspicious Login|2|2020-03-17|2|6000
+A019|Ethan Cole|SIEM Monitoring|INC057|Brute Force Attack|3|2022-08-15|7|28000
+A016|Alex Romero|Network Security|INC058|Firewall Breach|5|2023-06-11|18|78000
+A012|Donna Hanscum|Digital Forensics|INC059|Data Breach|5|2025-02-24|50|230000
+A009|Charlie Bradbury|Malware Analysis|INC060|Trojan Infection|4|2024-07-22|9|57000
+A002|Castiel Novak|SIEM Monitoring|INC061|Phishing|3|2017-10-15|4|12000
+A014|Rowena MacLeod|Malware Analysis|INC062|Ransomware|5|2021-06-20|28|98000
+A013|Garth Fitzgerald II|Network Security|INC063|Firewall Breach|5|2017-03-21|16|122000
+A015|Rufus Turner|SIEM Monitoring|INC064|Suspicious Login|2|2013-12-20|1|3500
+A001|Dean Smith|Network Security|INC065|DDoS|4|2020-03-11|9|59000
+A020|Benny Lafitte|Network Security|INC066|Port Scanning Attack|2|2022-01-11|2|5700
+A024|Thomas Mayo|SIEM Monitoring|INC067|Phishing|3|2018-09-17|6|19000
+A003|Sam Smith|Digital Forensics|INC068|Insider Threat|4|2024-02-06|30|59000
+A004|Jack Kline|Network Security|INC069|DDoS|4|2018-11-15|9|46000
+A006|Crowley Macleod|Malware Analysis|INC070|Spyware|3|2019-02-10|5|20000
+A008|Bobby Singer|Network Security|INC071|Man-in-the-Middle|3|2013-05-09|5|14700
+A010|Kevin Tran|Digital Forensics|INC072|Data Breach|5|2025-04-12|35|154000
+A017|Nora Bennett|Malware Analysis|INC073|Worm Attack|4|2017-08-19|11|35000
+A012|Donna Hanscum|Digital Forensics|INC074|Insider Threat|4|2020-04-15|28|62000
+A007|Eileen Leahy|SIEM Monitoring|INC075|Brute Force Attack|3|2019-12-04|6|29000
+A005|Claire Smith Novak|Digital Forensics|INC076|Evidence Tampering|5|2017-08-21|38|125000
+A019|Ethan Cole|SIEM Monitoring|INC077|Phishing|3|2018-03-22|3|19000
+A016|Alex Romero|Network Security|INC078|DDoS|4|2015-07-23|10|63000
+A009|Charlie Bradbury|Malware Analysis|INC079|Ransomware|5|2015-03-22|20|220000
+A014|Rowena MacLeod|Malware Analysis|INC080|Spyware|3|2022-06-01|5|19000
+A002|Castiel Novak|SIEM Monitoring|INC081|Brute Force Attack|3|2012-05-16|7|25000
+A003|Sam Smith|Digital Forensics|INC082|Evidence Tampering|5|2023-08-12|36|123000
+A001|Dean Smith|Network Security|INC083|Firewall Breach|5|2016-08-11|18|145000
+A018|Maya Chen|Digital Forensics|INC084|Evidence Tampering|5|2024-03-30|42|120000
+A022|Alexander Jeremy|Malware Analysis|INC085|Ransomware|5|2022-03-13|30|310000
+A013|Garth Fitzgerald II|Network Security|INC086|Port Scanning Attack|2|2012-08-21|2|3900
+A020|Benny Lafitte|Network Security|INC087|DDoS|4|2018-09-02|11|67000
+A010|Kevin Tran|Digital Forensics|INC088|Insider Threat|4|2019-07-11|28|51000
+A011|Jody Mills|SIEM Monitoring|INC089|Account Compromise|4|2015-06-29|10|58000
+A008|Bobby Singer|Network Security|INC090|DDoS|4|2019-04-13|12|66000
+A012|Donna Hanscum|Digital Forensics|INC091|Data Breach|5|2025-02-24|50|230000
+A007|Eileen Leahy|SIEM Monitoring|INC092|Suspicious Login|2|2020-03-17|2|6000
+A024|Thomas Mayo|SIEM Monitoring|INC093|Brute Force Attack|3|2022-12-06|6|28000
+A014|Rowena MacLeod|Malware Analysis|INC094|Ransomware|5|2023-01-12|25|150000
+A009|Charlie Bradbury|Malware Analysis|INC095|Trojan Infection|4|2024-07-22|9|57000
+A016|Alex Romero|Network Security|INC096|Firewall Breach|5|2023-06-11|18|78000
+A017|Nora Bennett|Malware Analysis|INC097|Spyware|3|2018-05-30|6|20000
+A003|Sam Smith|Digital Forensics|INC098|Unauthorized Access|3|2018-07-01|7|40000
+A005|Claire Smith Novak|Digital Forensics|INC099|Evidence Tampering|5|2017-08-21|38|125000
+A001|Dean Smith|Network Security|INC100|Firewall Breach|5|2016-08-11|18|145000

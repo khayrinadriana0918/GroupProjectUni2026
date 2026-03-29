@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=MainGUI
+comment1.params=
+comment1.target=MainGUI()
+comment2.params=
+comment2.target=void\ loadData()
+comment3.params=queue\ panel
+comment3.target=void\ displayQueue(java.awt.Queue,\ javax.swing.JPanel)
+comment4.params=
+comment4.target=void\ processNextBatch()
+comment5.params=queue
+comment5.target=void\ processQueue(java.awt.Queue)
+comment6.params=title
+comment6.target=javax.swing.JPanel\ createPanel(java.lang.String)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=CaseReader
+comment1.params=filename
+comment1.target=java.util.LinkedList\ readFromFile(java.lang.String)
+numComments=2

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=IncidentInfo
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ IncidentInfo\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=incidentId\ incidentType\ severityLevel\ reportDate\ estimatedResolutionTime\ impactCost
+comment1.target=IncidentInfo(java.lang.String,\ java.lang.String,\ int,\ java.lang.String,\ java.lang.String,\ double)
+comment2.params=
+comment2.target=java.lang.String\ getIncidentId()
+comment3.params=
+comment3.target=java.lang.String\ getIncidentType()
+comment4.params=
+comment4.target=int\ getSeverityLevel()
+comment5.params=
+comment5.target=java.lang.String\ getReportDate()
+comment6.params=
+comment6.target=java.lang.String\ getERT()
+comment7.params=
+comment7.target=double\ getImpactCost()
+numComments=8
