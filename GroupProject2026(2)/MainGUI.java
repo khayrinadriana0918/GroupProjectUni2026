@@ -54,13 +54,13 @@ public class MainGUI extends JFrame {
         loadBtn.addActionListener(e -> loadData());
 
         showBtn.addActionListener(e -> {
-            displayQueue(routing.getInternalQueue(), internalPanel);
-            displayQueue(routing.getExternalQueue(), externalPanel);
-            displayQueue(routing.getCriticalQueue(), criticalPanel);
-        });
+                    displayQueue(routing.getInternalQueue(), internalPanel);
+                    displayQueue(routing.getExternalQueue(), externalPanel);
+                    displayQueue(routing.getCriticalQueue(), criticalPanel);
+            });
 
         nextBtn.addActionListener(e -> processNextBatch());
-        
+
         stackBtn.addActionListener(e -> showResolvedStack());
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -71,7 +71,7 @@ public class MainGUI extends JFrame {
     private void loadData() {
 
         LinkedList<AnalystInfo> analystList =
-                CaseReader.readFromFile("cyber_incidents.txt");
+            CaseReader.readFromFile("cyber_incidents.txt");
 
         routing = new IncidentRouting(analystList);
 
@@ -84,7 +84,7 @@ public class MainGUI extends JFrame {
     private void displayQueue(Queue<AnalystInfo> queue, JPanel panel) {
 
         panel.removeAll();
-        
+
         java.util.List<String> details =routing.getQueueDetails(queue);
 
         int count = 0;
@@ -95,7 +95,7 @@ public class MainGUI extends JFrame {
 
             JTextArea area = new JTextArea(text);
             area.setEditable(false);
-            
+
             panel.add(area);
             count++;
         }
@@ -126,13 +126,6 @@ public class MainGUI extends JFrame {
             AnalystInfo analyst = queue.poll();
 
             System.out.println("Processing: " + analyst.getAnalystName());
-            
-            double total = 0;
-        for (IncidentInfo i : analyst.getIncidents()) {
-            total += i.getImpactCost();
-        }
-
-        System.out.println(" Total Impact: RM " + total);
             // push into stack (completed)
             resolvedStack.push(analyst);
 
@@ -141,14 +134,14 @@ public class MainGUI extends JFrame {
     }
     //display stack
     private void showResolvedStack() {
-        
+
         if(resolvedStack.isEmpty()){
             JOptionPane.showMessageDialog(this," No completed analysts yet.");
             return;
         }
-        
+
         StringBuilder text = new StringBuilder();
-        
+
         Stack<AnalystInfo> temp = new Stack<>();
 
         text.append("\n=== COMPLETED ANALYSTS (STACK) ===\n");
@@ -164,11 +157,14 @@ public class MainGUI extends JFrame {
             double total = 0;
 
             for (IncidentInfo i : analyst.getIncidents()) {
-                System.out.println(" - " + i.getIncidentId());
+                text.append(" - ").append(i.getIncidentId()).append(" (").append(i.getIncidentType()).append(")")
+                .append(" Severity Lv.(").append(i.getSeverityLevel()).append(")\n")
+                .append(" Report Date : ").append(i.getReportDate()).append("\n")
+                .append(" Est. Resolution Time(Hour): ").append(i.getERT()).append("\n");
                 total += i.getImpactCost();
             }
 
-            text.append(" Total Cost: RM ").append(total).append("\n");
+            text.append(" Total Cost: RM ").append(String.format("%.2f",total)).append("\n\n");
             text.append("--------------------------\n");
         }
         //restore stack
@@ -177,8 +173,13 @@ public class MainGUI extends JFrame {
         }
         JTextArea area = new JTextArea(text.toString());
         area.setEditable(false);
-        
-        JOptionPane.showMessageDialog(this, new JScrollPane(area),"Resolved Stack",JOptionPane.INFORMATION_MESSAGE);
+        area.setLineWrap(true);
+        area.setWrapStyleWord(true);
+
+        JScrollPane scroll = new JScrollPane(area);
+        scroll.setPreferredSize(new Dimension(500, 400));
+
+        JOptionPane.showMessageDialog(this,scroll,"Resolved Stack",JOptionPane.INFORMATION_MESSAGE);
     }
     // ===== Panel helper =====
     private JPanel createPanel(String title) {
