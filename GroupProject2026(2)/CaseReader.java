@@ -66,14 +66,6 @@ public class CaseReader
                 analyst.addIncident(incident);
 
             }
-            /*debug print
-            System.out.println("All analysts in the list:");
-            for (AnalystInfo b : analystList) {
-                System.out.println(b.getAnalystId() + " - " + b.getAnalystName());
-                System.out.println("Expertise Area: "+ b.getExpertiseArea()+"\n");
-            }
-            System.out.println("Total analysts: " + analystList.size());
-            */
         }catch(FileNotFoundException e){
             System.out.println("could not locate file");
         }
